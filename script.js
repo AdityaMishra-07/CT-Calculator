@@ -13,7 +13,8 @@ function mycalc(event) {
         document.querySelector("#inputbox").innerText = bag;
     } else if (targetNumber == "=") {
         let ans = eval(bag);
-        document.querySelector("#inputbox").innerText = `= ${ans}`;
+        document.querySelector("#inputbox").innerText = ` 
+                Ans = ${ans}`;
         bag = ans;
     } else {
         bag += targetNumber;
