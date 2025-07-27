@@ -1,0 +1,88 @@
+* {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(135, 135, 185);
+}
+
+.calculator {
+    width: 500px;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: auto;
+    padding: 30px;
+}
+
+#inputbox {
+    width: 450px;
+    height: 75px;
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#keyboard {
+    display: grid;
+    padding: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+#keyboard>div {
+    /* width: 50%; */
+    height: 30px;
+    /* border: 1px solid black; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 23px;
+}
+
+#operator {
+    color: white;
+    background-color: rgb(39, 36, 36);
+}
+
+#clear {
+    background-color: red;
+}
+
+#keyboard>div:hover {
+    background-color: rgb(92, 158, 186);
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .calculator {
+        width: 90%;
+        max-width: 360px;
+        padding: 15px;
+        height: 440px;
+    }
+
+    #inputbox {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #keyboard {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    #keyboard>div {
+        font-size: 1.4rem;
+        padding: 20px;
+        height: auto;
+        width: auto;
+    }
+}
